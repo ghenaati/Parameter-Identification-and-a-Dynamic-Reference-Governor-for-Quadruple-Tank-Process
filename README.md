@@ -26,7 +26,25 @@ This folder contains the scripts and numerical results associated with **Section
 
 ---
 
-### 2. `DMC_Controler`
+### 2. `Step Response`
+
+This folder contains the scripts and numerical results associated with step response coefficients in **Section 4 (Controller design using DMC)** of the paper.
+
+* **`StepResponse_QTP.m`**
+  Calculates the step-response coefficients for the identified model described in **Section 2.2 (System Identification)**.
+
+* **`IdentificationResults.m`**
+  Displays the identification results presented in **Section 2.2** of the paper.
+
+* **`tau.m`**
+  Calculates the time constants discussed in **Section 2.2** of the paper.
+
+* **`QTP.m`**
+  Contains the equations describing the height dynamics of the quadruple-tank system.
+
+---
+
+### 3. `DMC_Controler`
 
 This folder contains the scripts and numerical results associated with **Section 5 (DMC Control)** of the paper.
 
@@ -53,7 +71,7 @@ The numerical results used in the paper for the three DMC solution methods are s
 
 ---
 
-### 3. `DMC_DRG_Controller`
+### 4. `DMC_DRG_Controller`
 
 This folder contains the scripts and numerical results associated with **Section 6 (DMC integrated with Dynamic Reference Governor)** of the paper.
 
