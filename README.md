@@ -43,25 +43,22 @@ This folder contains the scripts and numerical results associated with step resp
 This folder contains the scripts and numerical results associated with **Section 5 (DMC Control)** of the paper.
 
 * **`DMC.m`**
-  Solves the DMC control problem presented in **Section 5** using three approaches: **Analytical**, **Interior-Point**, and **SQP**.
+  Solves the DMC control problem presented in **Section 5** using 'fmincon' function by two approaches : **Analytical**, and **SQP**.
 
-* **`StepResponc_QTP.m`**
-  Calculates the step-response coefficients corresponding to a **12 V input-voltage step** for the quadruple-tank system with **two inputs and two outputs**.
+* **`DMC_QP.m`**
+  Solves the DMC control problem presented in **Section 5** using 'quadprog' function.
 
 * **`DMC_Cost.m`**
   Defines the objective function of the DMC optimization problem.
 
-* **`NLC.m`**
-  Defines the nonlinear constraint function used to model the applied-voltage constraints over the prediction horizon.
-
-* **`results.m`**
-  Displays the results and figures corresponding to **Figures 4–9** of the paper.
+* **`Results_Section5.m`**
+  Displays the results and figures corresponding to **Figures 5–9** of the paper.
 
 The numerical results used in the paper for the three DMC solution methods are stored in the following MATLAB files:
 
 * **`Results_DMC_ANA.mat`** — Results obtained using the Analytical method.
-* **`Results_DMC_INT.mat`** — Results obtained using the Interior-Point method.
-* **`Results_DMC_SQP.mat`** — Results obtained using the SQP method.
+* **`Results_DMC_Section5.mat`** — Results obtained using the SQP method.
+* **`Results_DMC_Section5_QP.mat`** — Results obtained using the 'quadprog' function.
 
 ---
 
