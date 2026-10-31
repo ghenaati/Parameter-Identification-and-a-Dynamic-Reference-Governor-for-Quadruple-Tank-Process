@@ -1,4 +1,4 @@
-# Dynamic Matrix Control for Quadruple Tank Systems Integrated with System Identification and Dynamic Reference Governor
+# Constrained Dynamic Matrix Control of a Quadruple-Tank Process with Nonlinear Parameter Identification and a Dynamic Reference Governor
 
 This repository contains the scripts, optimization procedures, and numerical results associated with the paper:
 
