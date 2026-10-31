@@ -10,7 +10,7 @@ The repository is organized according to the main computational sections of the 
 
 ### 1. `System Identification`
 
-This folder contains the scripts and numerical results associated with **Section 2.2 (System Identification)** of the paper.
+This folder contains the scripts and numerical results associated with **Section 2.2 (System identification)** of the paper.
 
 * **`System Identification.m`**
   Performs the parameter identification procedure using two objective functions and two optimization methods: **Interior-Point** and **SQP**. The results obtained from the identification procedures and used in the paper are also provided in this folder.
