@@ -31,16 +31,10 @@ This folder contains the scripts and numerical results associated with **Section
 This folder contains the scripts and numerical results associated with step response coefficients in **Section 4 (Controller design using DMC)** of the paper.
 
 * **`StepResponse_QTP.m`**
-  Calculates the step-response coefficients for the identified model described in **Section 2.2 (System Identification)**.
+  Calculates the step-response coefficients for the identified model described in **Section 2.2 (System identification)**.
 
-* **`IdentificationResults.m`**
-  Displays the identification results presented in **Section 2.2** of the paper.
-
-* **`tau.m`**
-  Calculates the time constants discussed in **Section 2.2** of the paper.
-
-* **`QTP.m`**
-  Contains the equations describing the height dynamics of the quadruple-tank system.
+* **`Results_Section4`**
+  Displays the step-response coefficients for the identified model.
 
 ---
 
