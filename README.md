@@ -19,7 +19,7 @@ This folder contains the scripts and numerical results associated with **Section
   Displays the identification results presented in **Section 2.2** of the paper.
 
 * **`tau.m`**
-  Calculates the time constants discussed in **Section 2.2** of the paper.
+  Calculates the time constants discussed for **Table 2** in **Section 2.2** of the paper.
 
 * **`QTP.m`**
   Contains the equations describing the height dynamics of the quadruple-tank system.
