@@ -67,20 +67,23 @@ The numerical results used in the paper for the three DMC solution methods are s
 This folder contains the scripts and numerical results associated with **Section 6 (DMC integrated with Dynamic Reference Governor)** of the paper.
 
 * **`DMC_DRG.m`**
-  Solves the DMC-DRG optimization problem presented in **Section 6** using the **Interior-Point** method.
+  Solves the DMC-DRG optimization problem presented in **Section 6** using the **SQP** method.
 
 * **`DMC_DRG_Cost.m`**
   Defines the objective function of the DMC-DRG optimization problem.
 
-* **`NLC_Scenario1.m`**
-  Defines the nonlinear constraint function for **Scenario 1**, including the applied-voltage constraints and the tank-height constraints over the prediction horizon.
+* **`NLC_Scenario.m`**
+  Defines the nonlinear constraint function for **Scenario 1**, including the upper-tank-height constraints over the prediction horizon.
 
-* **`NLC_Scenario2.m`**
-  Defines the nonlinear constraint function for **Scenario 2**, including the applied-voltage constraints and the tank-height constraints over the prediction horizon.
+* **`SimpleDMC.m`**
+  Solves the problem presented in **Section 6** using the conventional DMC reported in **Scenario 5** .
 
-* **`Results_Section6.m`**
-  Displays the results and figures corresponding to **Figures 11–16** of the paper.
-
+* **`Results_Section6_Scenario1.m`**
+  Displays the results and figures corresponding to **Scenario 1** in **Section 6** of the paper.
+  
+* **`Results_Section6_Scenario2.m`**
+  Displays the results and figures corresponding to **Scenario 2** in **Section 6** of the paper.
+  
 The numerical results used in the paper for the two scenarios are stored in the following MATLAB files:
 
 * **`Results_DMC_DRG_Scenario1.mat`** — Results obtained for Scenario 1.
@@ -95,8 +98,9 @@ The files in this repository contain the computational procedures and numerical 
 The repository is organized so that each main computational section of the paper can be accessed independently:
 
 * **Section 2.2:** System identification
-* **Section 5:** DMC control
-* **Section 6:** DMC integrated with Dynamic Reference Governor
+* **Section 4:** DMC Model 
+* **Section 5:** The results of DMC control results
+* **Section 6:** The results of DMC integrated with Dynamic Reference Governor
 
 The `.mat` files contain the numerical results used for the corresponding figures and analyses in the paper, while the MATLAB scripts provide the associated computational procedures.
 
