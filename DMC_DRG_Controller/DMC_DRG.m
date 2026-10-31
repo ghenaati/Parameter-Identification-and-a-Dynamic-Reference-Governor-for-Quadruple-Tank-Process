@@ -132,7 +132,7 @@ for i = 1:Nt-1
         DU_Init=dU;
     end
     options = optimoptions('fmincon','Display','final','Algorithm','SQP','MaxFunctionEvaluations',20000);
-    [dU , Fval(i), ExitFlag(i)] = fmincon(@(dU) DMC_DRG_Cost(dU, G, FreeResponse, h0, W, RefTrackFlg, i, p, m, Q1, R, Q2, Q3), DU_Init , A , b , Aeq , beq , LB , UB ,[],options);
+    [dU , Fval(i), ExitFlag(i)] = fmincon(@(dU) DMC_DRG_Cost(dU, G, FreeResponse, h0, W, RefTrackFlg, i, p, m, Q1, R, Q2, Q3), DU_Init , A , b , Aeq , beq , LB , UB ,@(dU)NLC_Scenario(dU,U,i,p,m,h0, Ts),options);
     dU_Rep(:,i)=dU;
     [~, Sol(i)]=DMC_DRG_Cost(dU, G, FreeResponse, h0, W, RefTrackFlg, i, p, m, Q1, R, Q2, Q3);   
     CHI(i,:)=dU(2*m+1:2*m+p);
